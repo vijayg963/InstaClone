@@ -1,0 +1,97 @@
+.container {
+    max-width: 988px;
+    width: 100%;
+}
+
+.margin-tb {
+    margin: 24px + 62 auto 24px auto;
+}
+
+.profile {
+    margin: 56px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile-img {
+    height: 256px;
+    width: 256px;
+    margin-right: 56px;
+    img {
+        border-radius: 50%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+.name {
+    display: flex;
+    align-items: center;
+    margin-bottom: 36px;
+    .p-name {
+        font-size: 36px;
+        font-weight: 280;
+        margin-right: 24px;
+    }
+    .edit-btn {
+        background-color: white;
+        font-size: 16px;
+        font-weight: 500;
+        margin-right: 16px;
+        color: rgba(black,0.7);
+        border-radius: 4px;
+        border: 1px solid rgba(black,0.1);
+        padding: 8px 16px;
+    }
+    .settings-icon {
+        font-size: 30px;
+        font-weight: 550;
+        color: rgba(black,0.7);
+    }
+}
+.p-f-f {
+    margin-bottom: 36px;
+    span {
+        span {
+            font-size: 18px;
+            color: rgba(black,0.8);
+            font-weight: 300;
+        }
+        font-size: 19px;
+        margin-right: 16px;
+    }
+}
+
+.status-box {
+    display: flex;
+    flex-direction: column;
+    span {
+        margin-bottom: 12px;
+        font-size: 18px;
+        word-spacing: 3px;
+    }
+    a {
+        text-decoration: none;
+        color: #00376b;
+        font-size: 19px;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.photo-grid {
+    border-top: 1px solid rgba(black,0.1);
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    .feed {
+        margin: 30px;
+        height: 256px;
+        width: 27%;
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}

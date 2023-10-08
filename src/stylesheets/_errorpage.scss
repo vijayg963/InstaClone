@@ -1,0 +1,17 @@
+.error-page {
+    height: 50vh;
+    h1 {
+        font-size: 30px;
+        font-weight: 650;
+        margin-bottom: 36px;
+    }
+    p {
+        color: rgba(black,0.7);
+        .go-back {
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

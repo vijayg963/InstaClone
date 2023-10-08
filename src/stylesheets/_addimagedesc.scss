@@ -1,0 +1,57 @@
+.main-add-image-description {
+    max-width: 988px;
+    width: 100%;
+    margin: 0 auto;
+    height: 80vh;
+}
+
+.err-msg {
+    color: red;
+    margin: 16px 0;
+}
+
+.form-desc {
+    width: 500px;
+    margin: 24px 16px;
+    display: flex;
+    flex-direction: column;
+    label {
+        margin-bottom: 8px;
+    }
+    input {
+        background-color: #fafafa;
+        outline: 0;
+        padding: 10px;
+        border: 1px solid rgba(black,0.1);
+        margin-bottom: 10px;
+        &:focus {
+            border: 1px solid rgba(black,0.4); 
+        }
+    }
+    .submit {
+        width: 106px;
+        align-self: flex-end;
+        border: 0;
+        padding: 8px;
+        border-radius: 4px;
+        color: white;
+        background-color: #0095f6;
+        margin: 10px 0;
+        font-size: 16px;
+        font-weight: 500;
+        &:hover {
+            background-color: rgba(#0095f6,0.6); 
+        }
+        &:focus {
+            background-color: rgba(purple,0.5);
+        }
+    }
+    .err {
+        background-color: rgba(#0095f6,0.6); 
+    }
+}
+
+.relative-loader {
+    position: relative;
+    margin: 16px;
+}

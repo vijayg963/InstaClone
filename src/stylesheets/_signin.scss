@@ -1,0 +1,97 @@
+.signin-form {
+    max-width: 272px;
+    width: 100%;
+    margin: 36px auto 16px auto;
+    background-color: white;
+    padding: 36px;
+    border: 1px solid rgba(black,0.1);
+    .margin-16-36 {
+        margin: 16px 0 36px 0; 
+    }
+    .instagram-name {
+        width: 100%;
+        // margin-bottom: 16px;
+        img {
+            width: 186px;
+            object-fit: cover;
+        }
+    }
+    .login-with-facebook {
+        padding: 8px;
+        border-radius: 6px;
+        color: rgba(#385185,0.9);
+        span {
+            margin-left: 8px;
+            font-size: 14px;
+            font-weight: 500;
+
+        }
+    }
+    .margin-10 {
+        margin: 10px 0;
+    }
+    .margin-24 {
+        margin: 24px 0 0 0;
+    }
+    .or {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        div {
+            font-size: 13px;
+            font-weight: 500;
+            color: rgba(grey,0.9);
+        }
+        .hr {
+            width: 40%;
+            padding-top: 1.5px;
+            border: 0;
+            background-color: rgba(grey,0.3);
+        }
+    }
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    #login {
+        border: 0;
+        padding: 6px;
+        border-radius: 4px;
+        color: white;
+        background-color: #0095f6;
+        margin: 10px 0;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    input {
+        background-color: #fafafa;
+        outline: 0;
+        display: block;
+        padding: 10px;
+        border: 1px solid rgba(black,0.1);
+        margin-bottom: 10px;
+        &:focus {
+            border: 1px solid rgba(black,0.4); 
+        }
+    }
+}
+
+
+.have-an-account {
+    text-align: center;
+    font-size: 14px;
+    color: rgba(black,0.8);
+    max-width: 272px;
+    width: 100%;
+    margin: 8px auto 16px auto;
+    background-color: white;
+    padding: 24px 36px;
+    text-decoration: none;
+    .link {
+        text-decoration: none;
+        color: #0095f6;
+    }
+    border: 1px solid rgba(black,0.1);
+}
