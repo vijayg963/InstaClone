@@ -7,7 +7,7 @@ export const db = getFirestore(app);
 
 export const createAuthUser = async (email, password) => {
 	try {
-		const {user} = await createUserWithEmailAndPassword(auth, email, password);
+		const { user } = await createUserWithEmailAndPassword(auth, email, password);
 		await setPersistence(auth, browserLocalPersistence)
 		return { data: { email, uid: user.uid } };
 	} catch (error) {
@@ -17,9 +17,9 @@ export const createAuthUser = async (email, password) => {
 
 export const signInUser = async (email, password) => {
 	try {
-		const {user} = await signInWithEmailAndPassword(auth, email, password);
+		const { user } = await signInWithEmailAndPassword(auth, email, password);
 		await setPersistence(auth, browserLocalPersistence)
-		return { data:  { email, uid: user.uid } };
+		return { data: { email, uid: user.uid } };
 	} catch (error) {
 		return { error: error.message };
 	}
@@ -46,7 +46,7 @@ export const getUserInfo = async (uid) => {
 		const docRef = doc(db, "users", uid);
 		const docSnap = await getDoc(docRef);
 		if (docSnap.exists()) {
-			return { data: {...docSnap.data(), uid} }
+			return { data: { ...docSnap.data(), uid } }
 		} else {
 			throw new Error("No User info found")
 		}
@@ -73,20 +73,22 @@ export const updateUserInfo = async (info, uid) => {
 	// }
 }
 
+console.log("hello")
+
 export const addUpdateUserInfoArray = async (key, value, uid) => {
 	try {
 		const docRef = doc(db, "users", uid);
 		await updateDoc(docRef, {
 			[key]: arrayUnion(value)
 		});
-		return {data: {value}}
+		return { data: { value } }
 	} catch (error) {
 		console.log(error)
 		return { error: error.message };
 	}
 }
 
-export const reAuthUser =  () => {
+export const reAuthUser = () => {
 	return new Promise((res, rej) => {
 		onAuthStateChanged(auth, async (user) => {
 			if (user) {
